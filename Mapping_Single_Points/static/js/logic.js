@@ -31,3 +31,16 @@ streets.addTo(map);
 // mapbox/dark-v10
 // mapbox/satellite-v9
 // mapbox/satellite-streets-v11
+
+// //  Add a marker to the map for Los Angeles, California.
+// let marker = L.marker([34.0522, -118.2437]).addTo(map);
+
+// let marker = L.circle([34.0522, -118.2437], {
+//   radius: 50000
+// }).addTo(map);
+
+L.circleMarker([34.0522, -118.2437], {
+  radius: 300,
+  color: "black",
+  fillColor: "#ffffa1"
+}).addTo(map);
